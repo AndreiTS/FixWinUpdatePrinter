@@ -19,7 +19,7 @@ fn main() {
 
     let key = key.unwrap();
 
-    let res = key.set_value("RpcAuthnLevelPrivacyEnabled", &1u32);
+    let res = key.set_value("RpcAuthnLevelPrivacyEnabled", &0u32);
 
     if let Err(e) = res {
         let msg= format!("Failed to create value\n{}", e.to_string());
